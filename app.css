@@ -51,6 +51,16 @@
 .focus{
   animation: border-pulse 2s infinite;
 }
+@font-face{
+    font-family: 'Norse-Bold';
+    src: url("norse-bold.ttf") format("truetype");
+  }
+  .odin-logo> p{
+    font-family: 'Norse-Bold', sans-serif;
+    display: inline;
+    color: #fff;
+    font-size: 32px;
+  }
 
 @media(min-width:320px) and (max-width: 760px){
   :root{
@@ -68,16 +78,7 @@
     height: 40px;
     margin: 8px 16px;
   }
-  @font-face{
-    font-family: 'Norse-Bold';
-    src: url("norse-bold.ttf") format("truetype");
-  }
-  .odin-logo> p{
-    font-family: 'Norse-Bold', sans-serif;
-    display: inline;
-    color: #fff;
-    font-size: 32px;
-  }
+  
   .hero{
     backdrop-filter: blur(32px);
     border-radius: 8px;
