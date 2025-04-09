@@ -134,6 +134,9 @@
     display: block;
     text-shadow: none;
   }
+  input{
+    padding: 8px 4px;
+  }
   .hero{
     height: 100%;
     flex-basis: 60vw;
@@ -149,8 +152,11 @@
     padding: 48px;
     border-radius: 4px;
   }
+  .info-grid > div{
+    margin: 32px 0px;
+  }
   form{
-    padding: 64px 24px;
+    padding: 128px 128px 64px 64px;
     margin: none;
     height: auto;
   }
@@ -161,8 +167,14 @@
     align-items: center;
     width: 100%;
   }
+  .sidebar{
+    align-items: flex-start;
+    margin-top: 20%;
+  }
   .odin-logo{
     padding: 4px 8px;
+    
+    background-color: rgba(0,0,0,0.5);
   }
   
 }
