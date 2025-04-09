@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/app.css"/>
+  <script src="/scripts/app.js" defer></script>
+  <title>Odin Form</title>
+</head>
+<body>
+  <section class="sidebar">
+    <div class="odin-logo">
+      <img class="logo" src="/images/odin.png">
+      <p>odin</p>
+    </div>
+  </section>
+  <form class="hero" method="post">
+    <div>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. Signup now to get started.<br><br>You know you want to.</div>
+    <div class="info-card">
+      <h3>Let's do this!</h3>
+      <div class="info-grid">
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required>
+        </div>
+        <div>
+          <label for="surname">Surname</label>
+          <input type="text" name="surname" id="surname" required>
+        </div>
+        <div>
+          <label for="email-addr">Email Address</label>
+          <input type="email" name="email" id="email-addr" required>
+        </div>
+        <div>
+          <label for="phone-number">Phone Number</label>
+          <input type="number" name="phone-number" id="phone-number" pattern="(\d{3}\d{3}\d{4})"required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+      <div>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" name="confirm-password" id="confirm-password" required> 
+      </div>
+      </div>
+    </div>
+    <div>
+      <button type="submit" class="submit-btn">Create Account</button>
+      <p>Already have an account? <a>Log In</a></p>
+    </div>
+  </form>
+</body>
+</html>

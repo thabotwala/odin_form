@@ -1,0 +1,163 @@
+.info-grid > div > label{
+  display: block;
+}
+.submit-btn{
+  padding: 12px 8px;
+  margin: 8px 0px;
+  border: 2px solid darkolivegreen;
+  border-radius: 4px;
+  background-color: darkolivegreen;
+  color: white;
+  font-weight: 800;
+  font-family: 'Arial', sans-serif;
+  transition: all 250ms ease-in-out;
+}
+
+.submit-btn:active{
+  color: darkolivegreen;
+  background-color: white;
+}
+.submit-btn::selection{
+  color: white;
+  background-color: rgb(32, 128, 32);
+}
+
+.submit-btn::-moz-selection{
+  color: white;
+  background-color: rgb(32, 128, 32);
+}
+
+.submit-btn::-webkit-selection{
+  color: white;
+  background-color: rgb(32, 128, 32);
+}
+@keyframes border-pulse{
+  0% {
+    border-color: #0F0F0F;
+  }
+  25%{
+    border-color: #A9A9A9;
+  }
+  50%{
+    border-color: #C8C8C8;
+  }
+  75%{
+    border-color #fff;
+  }
+  100%{
+    border-color: #181818;
+  }
+}
+.focus{
+  animation: border-pulse 2s infinite;
+}
+
+@media(min-width:320px) and (max-width: 760px){
+  :root{
+    color: #fff;
+    font-weight: 500;
+    background-image: url("/images/leaf.jpg");
+  }
+  .odin-logo{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+  }
+  .logo{
+    width: 40px;
+    height: 40px;
+    margin: 8px 16px;
+  }
+  @font-face{
+    font-family: 'Norse-Bold';
+    src: url("/fonts/norse-bold.ttf") format("truetype");
+  }
+  .odin-logo> p{
+    font-family: 'Norse-Bold', sans-serif;
+    display: inline;
+    color: #fff;
+    font-size: 32px;
+  }
+  .hero{
+    backdrop-filter: blur(32px);
+    border-radius: 8px;
+    padding: 64px 32px;
+    background-color: rgba(85, 107, 47, 0.55);
+  }
+  label{
+    margin: 8px 0px;
+    text-shadow: 2px 0px 15px #000, -2px 0px 15px #000;
+  }
+  input{
+    padding: 8px 4px;
+  }
+  a{
+    text-decoration: none;
+    color: #964B00;
+    font-weight: 600;
+  }
+  .submit-btn{
+    margin: 24px 0px 6px 0px;
+  }
+}
+@media(min-width: 767px){
+  html, body{
+    z-index: -1;
+    background-color: rgb(196, 196, 196);
+  }
+  :root{
+    z-index: -1;
+    background: none;
+    color: #000;
+    height: 100%;
+  }
+  body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .sidebar{
+    flex-basis: 40vw;
+    flex-grow: 2;
+    background-image: url("/images/leaf.jpg");
+    background-position: center;
+    background-size: auto;
+    height: 100%;
+    z-index: 1;
+  }
+  label{
+    display: block;
+    text-shadow: none;
+  }
+  .hero{
+    height: 100%;
+    flex-basis: 60vw;
+    flex-grow: 4;
+    margin: none;
+    padding: none;
+  }
+  .info-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    gap: 8px;
+    background-color: #fff;
+    padding: 24px 16px;
+    border-radius: 4px;
+  }
+  form{
+    padding: 18px;
+    margin: none;
+    height: auto;
+  }
+  .odin-logo, .sidebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .odin-logo{
+    padding: 4px 8px;
+  }
+  
+}

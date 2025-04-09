@@ -1,0 +1,147 @@
+*{
+  width: fit-content;
+  height: fit-content;
+  padding: none;
+  margin: none;
+}
+
+label{
+  display: block;
+}
+a{
+  color: darkolivegreen;
+  font-family: arial, monospace;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.submit-btn{
+  color: white;
+  background-color: darkolivegreen;
+  border: 2px solid darkolivegreen;
+  border-radius: 4px;
+  padding: 12px 32px;
+  margin: 20px 0px;
+  transition: all 250ms;
+}
+.submit-btn:hover, .submit-btn:active{
+  background-color: white;
+  color: darkolivegreen;
+}
+
+@font-face{
+  font-family: 'Norse-Bold';
+  src: url("/fonts/norse-bold.ttf") format('truetype');
+}
+
+@media(min-width: 360px){
+  *{
+    padding: none;
+    margin: none;
+  }
+  .sidebar{
+    padding: none;
+    margin: none;
+    width: 0px;
+    height: 0px;
+    background: none;
+  }
+  .logo{
+    width: 64px;
+    height: 64px;
+  }
+  .odin-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;.
+  }
+  .sidebar{
+    width: fit-content;
+    height: fit-content;
+  }
+  .odin-logo > p{
+    display: inline;
+    font-family: 'Norse-Bold', sans-serif;
+    color: #fff;
+  }
+  :root{
+    background-size: fit-content;
+    background-image: url("/images/leaf.jpg");
+  }
+  .hero{
+    color: #fff;
+    padding: 18px 0px 0px 18px;
+    backdrop-filter: blur(28px);
+  }
+  
+}
+
+@media(min-width: 768px){
+  :root{
+    background: none;
+    color: #000;
+    background-color: rgb(196, 196, 196);
+  }
+.info-grid{
+  display: grid;
+  color: #000;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+form{
+  padding: 30px;
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+}
+
+.odin-logo{
+  background-color: rgba(0,0,0,0.5);
+  margin-top: 30vh;
+  padding: 20px 0px;
+  display: block;
+}
+
+.odin-logo > p{
+  font-family: 'Norse-Bold', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  display: inline;
+  marging: none;
+  padding: none;
+}
+.odin-logo > img{
+  width: 2rem;
+  height: 1.8rem;
+  margin: 0px 0px 0px 16px;
+}
+.sidebar{
+  background: url("/images/leaf.jpg");
+  background-position: center;
+  flex-basis: 50vw;
+  flex-grow: 2;
+  height: iherit;
+  border: 2px solid blue;
+}
+.info-card{
+  background: #fff;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 2px;
+  box-shadow: 0px 6px 4px rgb(128,128,128);
+}
+  .hero{
+    flex-basis:  50vw;
+    flex-grow: 3;
+    border: 2px solid red;
+  }
+}
+*{
+  color: #000;
+   border: 2px dashed pink;
+}
